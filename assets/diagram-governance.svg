@@ -1,0 +1,26 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320">
+  <rect width="700" height="320" fill="#0b0f14"/>
+  <g stroke="#1f2937" fill="#111827">
+    <rect x="30" y="40" width="200" height="90" rx="12"/>
+    <rect x="250" y="40" width="200" height="90" rx="12"/>
+    <rect x="470" y="40" width="200" height="90" rx="12"/>
+    <rect x="250" y="190" width="200" height="90" rx="12"/>
+  </g>
+  <g fill="#e5e7eb" font-family="Arial, sans-serif" font-size="14">
+    <text x="130" y="95" text-anchor="middle">AI Module</text>
+    <text x="350" y="95" text-anchor="middle">Governance / AI Adapter</text>
+    <text x="570" y="95" text-anchor="middle">On‑chain Proposal</text>
+    <text x="350" y="245" text-anchor="middle">Multisig + Timelock</text>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa"/>
+    </marker>
+  </defs>
+  <g stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)">
+    <line x1="230" y1="85" x2="250" y2="85"/>
+    <line x1="450" y1="85" x2="470" y2="85"/>
+    <line x1="350" y1="130" x2="350" y2="190"/>
+  </g>
+</svg>

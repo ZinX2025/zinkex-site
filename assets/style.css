@@ -1,0 +1,68 @@
+
+:root {
+  --bg:#0b0f14; --panel:#111827; --text:#e5e7eb; --muted:#9ca3af; --brand:#60a5fa; --brand-2:#7c3aed; --line:#1f2937;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Inter,Arial}
+a{color:var(--brand);text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;position:sticky;top:0;background:rgba(11,15,20,.8);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:50}
+.brand{display:flex;gap:10px;align-items:center;font-weight:700}
+.brand img{width:28px;height:28px}
+.nav{display:flex;gap:18px;align-items:center}
+.nav a{padding:8px 10px;border-radius:10px;color:var(--text)}
+.nav a.cta{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:white}
+.burger{display:none;background:none;border:0;cursor:pointer}
+.burger span{display:block;width:22px;height:2px;background:var(--text);margin:4px 0}
+
+.hero{padding:80px 0 40px;display:grid;gap:20px}
+.hero h1{font-size:clamp(28px,5vw,48px);line-height:1.1;margin:0}
+.lead{color:var(--muted);max-width:800px}
+.hero-actions{display:flex;gap:12px;margin-top:8px}
+.btn{display:inline-block;padding:12px 18px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:white;font-weight:600}
+.btn.ghost{background:transparent;border:1px solid var(--line)}
+.inline-btn{display:inline-block;margin-top:8px}
+
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:40px 0}
+.features article{background:var(--panel);border:1px solid var(--line);padding:18px;border-radius:16px}
+
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;margin:40px 0}
+.illus{width:100%;border-radius:16px;border:1px solid var(--line);background:var(--panel);padding:16px}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.cards article{background:var(--panel);border:1px solid var(--line);padding:18px;border-radius:16px}
+
+.page-intro{margin:24px 0 8px}
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.check{list-style:none;padding:0}
+.check li{margin:10px 0;padding-left:28px;position:relative}
+.check li::before{content:"✓";position:absolute;left:0;top:0;color:var(--brand)}
+
+.bars{list-style:none;padding:0;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.bars li{padding:12px 14px;border-bottom:1px solid var(--line);background:linear-gradient(90deg,rgba(96,165,250,.15),transparent)}
+.bars li:last-child{border-bottom:0}
+
+.timeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.titem{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}
+
+.cta-banner{margin:50px 0;background:linear-gradient(135deg,rgba(96,165,250,.15),rgba(124,58,237,.12));border:1px solid var(--line);border-radius:16px;padding:24px;text-align:center}
+.cta-banner .btn{margin-top:8px}
+
+.contact-card{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+.contact-form{display:grid;gap:10px;background:var(--panel);border:1px solid var(--line);padding:18px;border-radius:16px}
+.contact-form label{display:grid;gap:6px}
+.contact-form input,.contact-form textarea{padding:10px;border-radius:10px;border:1px solid var(--line);background:#0b1017;color:var(--text)}
+.contact-side{background:var(--panel);border:1px solid var(--line);padding:18px;border-radius:16px}
+.muted{color:var(--muted)}
+
+.site-footer{border-top:1px solid var(--line);margin-top:40px;padding:24px;background:#0a0e13}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-bottom:8px}
+.foot-brand{display:flex;align-items:center;gap:10px;font-weight:700}
+.copy{color:var(--muted);text-align:center;font-size:14px;margin:8px 0 0}
+
+@media (max-width:860px){
+  .nav{display:none;position:absolute;right:16px;top:62px;background:#0b0f14;border:1px solid var(--line);padding:10px;border-radius:12px;flex-direction:column}
+  .burger{display:block}
+  .split{grid-template-columns:1fr}
+  .contact-card{grid-template-columns:1fr}
+}
